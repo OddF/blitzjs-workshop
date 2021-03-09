@@ -20,4 +20,4 @@ Now run the following commands:
 - `docker tag hello-world <oddfcontainers>.azurecr.io/workshop/dotjs-leaderboard`
     Applies a tag to the image
 - `docker push <oddfcontainers>.azurecr.io/workshop/dotjs-leaderboard`
-    Pushes the hello-world image to a new repository within your registry (named workshop)
+    Pushes the hello-world image to a new repository within your registry

@@ -9,10 +9,10 @@ To create a new resource group use the UI in azure portal, or simply run this co
 
 Now that we got our resource group in place we can create our database. Use the UI to create an `Azure Database for PostgreSQL server`
 Optionally you can use the following commands:
-`Install-Module -Name Az.PostgreSql`
-`Register-AzResourceProvider -ProviderNamespace Microsoft.DBforPostgreSQL`
-`$Password = Read-Host -Prompt 'Please enter your password' -AsSecureString`
-`New-AzPostgreSqlServer -Name <YourInitials>WorkshopSql -ResourceGroup dotjs-leaderboard -Sku B_Gen5_1 -Location 'North Europe' -AdministratorUsername <USERNAME> -AdministratorLoginPassword $Password`
+- `Install-Module -Name Az.PostgreSql`
+- `Register-AzResourceProvider -ProviderNamespace Microsoft.DBforPostgreSQL`
+- `$Password = Read-Host -Prompt 'Please enter your password' -AsSecureString`
+- `New-AzPostgreSqlServer -Name <YourInitials>WorkshopSql -ResourceGroup dotjs-leaderboard -Sku B_Gen5_1 -Location 'North Europe' -AdministratorUsername <USERNAME> -AdministratorLoginPassword $Password`
 
 PSA: Take note of the password provided, it will be used later.
 
