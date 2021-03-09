@@ -35,8 +35,8 @@ We'll tag it as largeImage so that we can easily run it
 ```yaml
 - name: Run migration against database
       run: |
-        docker build -t largeImage --target builder .
-        docker run -e DATABASE_URL='${{ secrets.DATABASE_URL }}' --entrypoint 'bash' builder -c 'npx blitz prisma migrate deploy --preview-feature'
+        docker build -t builderimage --target builder .
+        docker run -e DATABASE_URL='${{ secrets.DATABASE_URL }}' --entrypoint 'bash' builderimage -c 'npx blitz prisma migrate deploy --preview-feature'
 ```
 
 ## Adding the DATABASE_URL 
