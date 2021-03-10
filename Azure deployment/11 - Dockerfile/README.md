@@ -32,5 +32,4 @@ CMD npx blitz start --production
 
 We use a regular node:12 image for building the application, while a slim image for production. This allows us to save some space on the final image.
 
-From the build image we copy the build result stored in the .blitz and .next folders. In addition we need the node_modules, package.json and the db directory.
-To reduce the image size we could limit the dependencies to the result of `npm install --production`, but that seems to require that we do the database migration in or GitHub pipeline.
+From the build image we copy the build result stored in the .blitz and .next folders. In addition we need the node_modules for production, package.json and the db directory.

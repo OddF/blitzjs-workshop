@@ -36,3 +36,8 @@ generator client {
 ```
 
 To get this working on your local machine you will need to change the connection string in `.env.local` to point to the Azure PostgreSQL resource, or install PostgreSQL locally and use this.
+
+## Deleting old migrations 
+
+if you are using the same repository as the last workshop you will need to remove old migrations and create a new initial migration.
+Since that will require a local connection to a PostgreSQL server (which we don't have the time to setup), just copy the migration folder in this directory.
